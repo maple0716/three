@@ -122,12 +122,12 @@ function main() {
         const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
         const material2 = new THREE.MeshBasicMaterial({ color: 0xffff00 });
         const material3 = new THREE.MeshBasicMaterial({ color: 0x0000ff });
-        const material4 = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        //const material4 = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
         const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
         arjs.add(new THREE.Mesh(geom, material), longitude, latitude + 0.001); // slightly north
         arjs.add(new THREE.Mesh(geom, material2), longitude, latitude - 0.001); // slightly south
         arjs.add(new THREE.Mesh(geom, material3), longitude - 0.001, latitude); // slightly west
-        arjs.add(new THREE.Mesh(geom, material4), longitude + 0.001, latitude); // slightly east
+        //arjs.add(new THREE.Mesh(geom, material4), longitude + 0.001, latitude); // slightly east
         arjs.add(new THREE.Mesh(textGeometry, textMaterial), longitude + 0.001,latitude); // slightly east 
     }
 
